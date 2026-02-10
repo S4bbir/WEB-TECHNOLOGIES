@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 04</title>
+</head>
+
+<body>
+    <h1>Basic Form Structure</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="date" name="dob"><br><br>
+
+            Gender:<br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="dept">Department:</label><br>
+            <select id="dept" name="department">
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>DS</option>
+            </select><br><br>
+
+            Skills:<br>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label><br>
+
+            <input type="checkbox" id="js">
+            <label for="js">JavaScript</label><br><br>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
