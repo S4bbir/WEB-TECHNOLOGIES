@@ -1,0 +1,16 @@
+* {
+  font-size: arial,sans-serif;
+}
+body{
+    background-color: #e2e2e2;
+}
+p{
+    color: #008000;
+}
+#id_example{
+    color:#0400ff
+}
+.class_example{
+    color:#ae00ff
+}
+
