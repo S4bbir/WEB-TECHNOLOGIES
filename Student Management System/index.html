@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="dom.js" defer></script>
+    <link rel="stylesheet" href="dom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="continer">
+        <h2>Student Management System</h2>
+
+        <div class="input-group">
+            <input type="number" id="rollInput" placeholder="Roll No.">
+            <input type="text" id="nameInput" placeholder="Student Name">
+            <button id="addBtn" disabled>Add Student</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="search" placeholder="Search student">
+        </div>
+
+        <ul id="studentList"></ul>
+
+        <div id="stats">
+            <p id="total">Total students: 0</p>
+            <p id="presentCount">Present: 0, Absent: 0</p>
+        </div>
+
+        <div class="input-group">
+            <button id="sortBtn">Sort A–Z</button>
+            <button id="highlightBtn">Highlight First Student</button>
+        </div>
+    </div>
+</body>
+</html>
