@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="style">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Sabbir | Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SA</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle">Dark/Light</button>
+    </header>
+
+    <section id="section_01">
+        <div class="container_01">
+            <h2>Hi, Sabbir Hossan Here,</h2>
+            <h1>A <span>creative product designer</span></h1>
+            <p>Immerse yourself in a sleek blend of professionalism and innovation. Let's shape success together!</p>
+            <button class="hire">Hire Me!</button>
+        </div>
+        <div class="container_02"></div>
+    </section>
+
+    <section id="about">
+        <div class="about-inner">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I build clean, user-friendly experiences across web and mobile. I focus on usability, strong visual design, and polished interactions.</p>
+                <ul>
+                    <li>UI/UX Design</li>
+                    <li>Prototype & Interaction</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+            </div>
+            <div class="about-image"></div>
+        </div>
+    </section>
+
+    <section id="project">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <h3>Project One</h3>
+                <p>A modern dashboard design with responsive charts and data visualizations.</p>
+                <a href="#" class="project-link">View project</a>
+            </article>
+            <article class="project-card">
+                <h3>Project Two</h3>
+                <p>A branded landing page built for conversion and performance.</p>
+                <a href="#" class="project-link">View project</a>
+            </article>
+            <article class="project-card">
+                <h3>Project Three</h3>
+                <p>A mobile-first interaction design with smooth animations and accessibility.</p>
+                <a href="#" class="project-link">View project</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get in touch</h2>
+        <form class="contact-form">
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit">Send message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Sabbir Hossan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+:root {
+    --bg-main: #f7f7f7;
+    --bg-secondary: rgba(255,255,255,0.7);
+    --text-dark: #111;
+    --text-light: #f1f1f1;
+    --primary: #4a90e2;
+    --card-bg: rgba(255,255,255,0.8);
+    --border: rgba(0,0,0,0.08);
+}
+
+body.dark {
+    --bg-main: #10101a;
+    --bg-secondary: rgba(25,25,35,0.7);
+    --text-dark: #e8e8f0;
+    --text-light: #f7f7ff;
+    --primary: #76b2ff;
+    --card-bg: rgba(20,20,30,0.85);
+    --border: rgba(255,255,255,0.12);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* navbar styling */
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    padding: 1rem 5%;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-secondary);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid var(--border);
+}
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+header button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: var(--text-light);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* section styling */
+
+#section_01{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 8rem;
+}
+.container_01, .container_02{
+    width: 50%;
+}
+.container_02{
+    min-height: 320px;
+    background: radial-gradient(circle at top, var(--primary) 0%, transparent 60%);
+    border-radius: 2rem;
+}
+.container_01 h2{
+    color: var(--text-dark);
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+.container_01 h1{
+    font-size: 3rem;
+}
+.container_01 h1 span{
+    color: #6b6b6b;
+}
+.container_01 p{
+    font-size: 20px;
+    color: #7e7e7e;
+}
+.container_01 button{
+    margin-top: 2rem;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #0084ff;
+    border-radius: 10px;
+    background-color: #0084ff;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* about section */
+#about {
+    padding: 6rem 5%;
+    background: var(--bg-secondary);
+}
+.about-inner {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.about-text {
+    flex: 1;
+}
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.about-text p {
+    margin-bottom: 1.5rem;
+    max-width: 520px;
+}
+.about-text ul {
+    list-style: disc inside;
+    color: var(--text-dark);
+}
+.about-image {
+    flex: 1;
+    min-height: 260px;
+    background: linear-gradient(135deg, var(--primary), rgba(255,255,255,0));
+    border-radius: 2rem;
+}
+
+/* projects */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0 1.5rem;
+}
+.projects-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 0 5%;
+}
+.project-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+}
+.project-card h3 {
+    margin-bottom: 0.75rem;
+}
+.project-card p {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+.project-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* contact */
+#contact {
+    padding: 5rem 5%;
+}
+.contact-form {
+    max-width: 520px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.7);
+    color: var(--text-dark);
+}
+.contact-form button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background: var(--primary);
+    color: var(--text-light);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* footer */
+footer {
+    padding: 2rem 5%;
+    text-align: center;
+    color: var(--text-dark);
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    #section_01 {
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+    .container_01, .container_02 {
+        width: 100%;
+    }
+    .about-inner {
+        flex-direction: column;
+    }
+}
